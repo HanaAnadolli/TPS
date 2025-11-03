@@ -13,12 +13,12 @@ export default function Contact() {
             <div 
                 className="min-h-screen"
                 style={{
-                    background: 'linear-gradient(180deg, #E3E7EB 0%, #E3E7EB 40%, #DF742D 100%)'
+                    background: 'linear-gradient(180deg, #E3E7EB 0%, #E3E7EB 40%, #F48034 100%)'
                   }}
                   
             >
                 <div className="container mx-auto px-6 py-12">
-                    <h1 className="text-4xl font-bold text-center mb-12" style={{ color: '#DF742D' }}>
+                    <h1 className="text-4xl font-bold text-center mb-12" style={{ color: '##F48034' }}>
                         Contact Us
                     </h1>
 
@@ -134,7 +134,7 @@ export default function Contact() {
                             <button
                                 type="submit"
                                 className="w-full py-3 px-6 rounded-lg text-white font-semibold transition-all duration-300 hover:opacity-90"
-                                style={{ backgroundColor: '#DF742D' }}
+                                style={{ backgroundColor: '#F48034' }}
                             >
                                 Send Message
                             </button>
