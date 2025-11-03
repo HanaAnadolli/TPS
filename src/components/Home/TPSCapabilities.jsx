@@ -1,5 +1,16 @@
 import React, { useState } from "react";
 
+// Import all capability images
+import CreditCardPng from "../../assets/tps-capabilities/credit-card.png";
+import PercentPng from "../../assets/tps-capabilities/percent.png";
+import PayablePng from "../../assets/tps-capabilities/payable.png";
+import ExchangePng from "../../assets/tps-capabilities/exchange.png";
+import SettlementIconPng from "../../assets/tps-capabilities/settlement-icon.png";
+import RatioPng from "../../assets/tps-capabilities/ratio.png";
+import LiquidityPng from "../../assets/tps-capabilities/liquidity.png";
+import Liquidity2Png from "../../assets/tps-capabilities/liquidity-2.png";
+import DealPng from "../../assets/tps-capabilities/deal.png";
+
 function TPSCapabilities() {
   const [activeTab, setActiveTab] = useState("distribution");
 
@@ -14,23 +25,23 @@ function TPSCapabilities() {
     description: "Early settlement date for the vendor (- DSO) and extended payment term for the buyer (+ DPO).",
     features: [
       {
-        icon: "/src/assets/tps-capabilities/credit-card.png",
+        icon: CreditCardPng,
         text: "Vendor reduces customer credit risk and receives early receivables payment"
       },
       {
-        icon: "/src/assets/tps-capabilities/percent.png",
+        icon: PercentPng,
         text: "Vendor can sponsor the program with early payment discount offered to the selected customers"
       },
       {
-        icon: "/src/assets/tps-capabilities/payable.png",
+        icon: PayablePng,
         text: "Buyers extend payables terms and can afford to purchase more from the Vendor"
       },
       {
-        icon: "/src/assets/tps-capabilities/exchange.png",
+        icon: ExchangePng,
         text: "An enhanced trading relationship between the vendor a buyer is created"
       },
       {
-        icon: "/src/assets/tps-capabilities/settlement-icon.png",
+        icon: SettlementIconPng,
         text: "Credit and settlement management is supported by the tools used to manage the program"
       }
     ]
@@ -41,19 +52,19 @@ function TPSCapabilities() {
     description: "Early settlement date for the vendor.",
     features: [
       {
-        icon: "/src/assets/tps-capabilities/credit-card.png",
+        icon: CreditCardPng,
         text: "Vendor reduces customer credit risk and receives early receivables payment"
       },
       {
-        icon: "/src/assets/tps-capabilities/ratio.png",
+        icon: RatioPng,
         text: "Vendor financial ratios improve and as such its grading"
       },
       {
-        icon: "/src/assets/tps-capabilities/liquidity.png",
+        icon: LiquidityPng,
         text: "Vendor can use excess liquidity form the program to reduce financial debt"
       },
       {
-        icon: "/src/assets/tps-capabilities/settlement-icon.png",
+        icon: SettlementIconPng,
         text: "Credit and settlement management is supported by the tools used to manage the program"
       }
     ]
@@ -64,19 +75,19 @@ function TPSCapabilities() {
     description: "Extended payment terms for the buyer (+ DPO) on trades with key vendors, with the possibility of anticipating settlement date to the supplier so that the buyer can benefit from the early payment cash discounts.",
     features: [
       {
-        icon: "/src/assets/tps-capabilities/liquidity-2.png",
+        icon: Liquidity2Png,
         text: "Buyer extends payable terms and as such generated liquidity"
       },
       {
-        icon: "/src/assets/tps-capabilities/ratio.png",
+        icon: RatioPng,
         text: "Buyer financial ratios improve"
       },
       {
-        icon: "/src/assets/tps-capabilities/liquidity.png",
+        icon: LiquidityPng,
         text: "Buyer can use excess liquidity form the program to reduce financial debt"
       },
       {
-        icon: "/src/assets/tps-capabilities/deal.png",
+        icon: DealPng,
         text: "Credit capacity with third parties increase"
       }
     ]
