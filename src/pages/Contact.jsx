@@ -18,7 +18,7 @@ export default function Contact() {
                   
             >
                 <div className="container mx-auto px-6 py-12">
-                    <h1 className="text-4xl font-bold text-center mb-12" style={{ color: '##F48034' }}>
+                    <h1 className="text-4xl font-bold text-center mb-12" style={{ color: '#F48034' }}>
                         Contact Us
                     </h1>
 
