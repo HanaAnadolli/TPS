@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* brand tokens */
+:root {
+  --bg-color: #e3e7eb; /* light surface */
+  --primary-color: #f48034; /* TPS orange */
+}
+
+/* page background */
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  background: var(--bg-color);
+  font-family: 'Roboto', sans-serif;
+}
