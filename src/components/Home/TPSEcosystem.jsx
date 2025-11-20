@@ -59,12 +59,12 @@ const TPSEcosystem = () => {
 
           <div 
             ref={leftDiagramRef}
-            className="relative mt-6 sm:mt-8 h-[240px] sm:h-[300px] lg:h-[360px] w-full overflow-hidden"
+            className="relative mt-6 sm:mt-8 h-[280px] sm:h-[300px] lg:h-[360px] w-full overflow-hidden"
           >
             {/* External Services - Far Left */}
             <div className="absolute top-1/2 transform -translate-y-1/2 left-0">
               <div 
-                className="bg-[#929292] rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 lg:px-4 lg:py-2.5 text-white font-medium text-[10px] sm:text-xs lg:text-sm whitespace-nowrap hover:bg-[#CACACA] cursor-pointer transition-colors"
+                className="bg-[#929292] rounded-lg px-3 py-2 sm:px-3 sm:py-2 lg:px-4 lg:py-2.5 text-white font-medium text-xs sm:text-xs lg:text-sm whitespace-nowrap hover:bg-[#CACACA] cursor-pointer transition-colors"
                 onClick={() => setOpen("services")}
                 role="button"
                 tabIndex={0}
@@ -81,19 +81,19 @@ const TPSEcosystem = () => {
             </div>
 
             {/* Arrow from External Services to TPS */}
-            <div className='absolute left-[35%] sm:left-[38%] bottom-[32%] sm:bottom-[34%] transform'>
-              <span className='absolute right-[120%] bottom-[82%] transform -translate-y-1/2 text-[10px] sm:text-xs lg:text-sm hidden sm:block'>APIs</span>
+            <div className='absolute left-[38%] sm:left-[38%] bottom-[38%] sm:bottom-[34%] transform'>
+              <span className='absolute right-[120%] bottom-[82%] transform -translate-y-1/2 text-xs sm:text-xs lg:text-sm'>APIs</span>
               <div className="rotate-[215deg] origin-left">
-                <img src={arrowImage} alt="arrow to TPS" className="w-6 h-4 sm:w-12 sm:h-9 lg:w-20 lg:h-15" />
+                <img src={arrowImage} alt="arrow to TPS" className="w-10 h-7 sm:w-12 sm:h-9 lg:w-20 lg:h-15" />
               </div>
             </div>
 
             {/* Main TPS - Center-Right */}
-            <div className="absolute left-[45%] sm:left-[55%] lg:left-[58%] top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-[120px] sm:w-[180px] lg:w-[220px]">
+            <div className="absolute left-[60%] sm:left-[55%] lg:left-[58%] top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-[160px] sm:w-[180px] lg:w-[220px]">
               <img 
                 src={tpsHoverLeft ? tpsHoverImg : tpsImage} 
                 alt="TPS" 
-                className="w-full h-auto"
+                className="w-[90%] sm:w-full h-auto"
                 style={{
                   transition: "transform 800ms ease, filter 800ms ease",
                   transform: tpsHoverLeft ? "scale(1.03)" : "scale(1)",
@@ -107,7 +107,7 @@ const TPSEcosystem = () => {
                 <img 
                   src={omtImage} 
                   alt="OMT" 
-                  className="w-10 h-5 sm:w-12 sm:h-6 lg:w-15 lg:h-8 mt-0.5 sm:mt-1 cursor-pointer transition-all hover:brightness-[0.6]"
+                  className="w-12 h-6 sm:w-12 sm:h-6 lg:w-15 lg:h-8 mt-0.5 sm:mt-1 cursor-pointer transition-all hover:brightness-[0.6]"
                   onClick={() => setOpen("omt")}
                   role="button"
                   tabIndex={0}
@@ -123,12 +123,12 @@ const TPSEcosystem = () => {
             </div>
 
             {/* Arrow from TPS to CMT - rotated upward */}
-            <div className="absolute left-[60%] sm:left-[68%] lg:left-[70%] top-[20%] sm:top-[22%] transform -rotate-[4deg] origin-left">
-              <img src={arrowImage} alt="arrow to CMT" className="w-6 h-4 sm:w-12 sm:h-9 lg:w-20 lg:h-15" />
+            <div className="absolute left-[70%] sm:left-[68%] lg:left-[70%] top-[25%] sm:top-[22%] transform -rotate-[4deg] origin-left">
+              <img src={arrowImage} alt="arrow to CMT" className="w-10 h-10 sm:w-12 sm:h-9 lg:w-20 lg:h-15" />
             </div>
 
             {/* CMT - Top Right */}
-            <div className="absolute right-0 top-4 sm:top-10 cursor-pointer hover:opacity-80 transition-opacity w-[50px] sm:w-[75px] lg:w-[90px]">
+            <div className="absolute right-0 top-10 sm:top-10 cursor-pointer hover:opacity-80 transition-opacity w-[70px] sm:w-[75px] lg:w-[90px]">
               <img 
                 src={cmtImage} 
                 alt="CMT" 
@@ -147,12 +147,12 @@ const TPSEcosystem = () => {
             </div>
 
             {/* Arrow from TPS to FMT - rotated downward */}
-            <div className="absolute left-[63%] sm:left-[71%] lg:left-[73%] bottom-[28%] sm:bottom-[30%] transform rotate-[45deg] origin-left">
-              <img src={arrowImage} alt="arrow to FMT" className="w-6 h-4 sm:w-12 sm:h-9 lg:w-20 lg:h-15" />
+            <div className="absolute left-[72%] sm:left-[71%] lg:left-[73%] bottom-[26%] sm:bottom-[30%] transform rotate-[45deg] origin-left">
+              <img src={arrowImage} alt="arrow to FMT" className="w-10 h-10 sm:w-12 sm:h-9 lg:w-20 lg:h-15" />
             </div>
 
             {/* FMT - Bottom Right */}
-            <div className="absolute right-0 bottom-4 sm:bottom-12 cursor-pointer hover:opacity-80 transition-opacity w-[50px] sm:w-[75px] lg:w-[90px]">
+            <div className="absolute right-0 bottom-10 sm:bottom-12 cursor-pointer hover:opacity-80 transition-opacity w-[70px] sm:w-[75px] lg:w-[90px]">
               <img 
                 src={fmtImage} 
                 alt="FMT" 
@@ -195,12 +195,12 @@ const TPSEcosystem = () => {
           {/* Simplified Diagram matching Figma */}
           <div 
             ref={rightDiagramRef}
-            className="relative mt-6 sm:mt-8 h-[240px] sm:h-[300px] lg:h-[360px] w-full overflow-hidden"
+            className="relative mt-6 sm:mt-8 h-[280px] sm:h-[300px] lg:h-[360px] w-full overflow-hidden"
           >
             {/* External Services - Far Left */}
-            <div className="absolute left-0 top-[45%] transform -translate-y-1/2">
+            <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
               <div 
-                className="bg-[#929292] rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 lg:px-4 lg:py-2.5 text-white font-medium text-[10px] sm:text-xs lg:text-sm whitespace-nowrap hover:bg-[#CACACA] cursor-pointer transition-colors"
+                className="bg-[#929292] rounded-lg px-3 py-2 sm:px-3 sm:py-2 lg:px-4 lg:py-2.5 text-white font-medium text-xs sm:text-xs lg:text-sm whitespace-nowrap hover:bg-[#CACACA] cursor-pointer transition-colors"
                 onClick={() => setOpen("services")}
                 role="button"
                 tabIndex={0}
@@ -217,15 +217,15 @@ const TPSEcosystem = () => {
             </div>
 
             {/* Arrow from External Services to TPS */}
-            <div className='absolute left-[37%] sm:left-[40%] bottom-[32%] sm:bottom-[34%] transform'>
-              <span className='absolute right-[120%] bottom-[82%] transform -translate-y-1/2 text-[10px] sm:text-xs lg:text-sm hidden sm:block'>APIs</span>
+            <div className='absolute left-[48%] sm:left-[40%] bottom-[32%] sm:bottom-[34%] transform'>
+              <span className='absolute right-[120%] bottom-[82%] transform -translate-y-1/2 text-xs sm:text-xs lg:text-sm'>APIs</span>
               <div className="rotate-[215deg] origin-left">
-                <img src={arrowImage} alt="arrow to TPS" className="w-6 h-4 sm:w-12 sm:h-9 lg:w-22 lg:h-18" />
+                <img src={arrowImage} alt="arrow to TPS" className="w-15 h-14 sm:w-12 sm:h-9 lg:w-22 lg:h-18" />
               </div>
             </div>
 
             {/* Main TPS - centered */}
-            <div className="absolute left-[45%] sm:left-[58%] lg:left-[62%] top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-[120px] sm:w-[180px] lg:w-[220px]">
+            <div className="absolute left-[70%] sm:left-[58%] lg:left-[62%] top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-[160px] sm:w-[180px] lg:w-[220px]">
               <img 
                 src={tpsHoverRight ? tpsHoverImg : tpsImage} 
                 alt="TPS" 
@@ -243,7 +243,7 @@ const TPSEcosystem = () => {
                 <img 
                   src={omtImage} 
                   alt="OMT" 
-                  className="w-10 h-5 sm:w-12 sm:h-6 lg:w-15 lg:h-8 mt-0.5 sm:mt-1 cursor-pointer transition-all hover:brightness-[0.6]"
+                  className="w-12 h-6 sm:w-12 sm:h-6 lg:w-15 lg:h-8 mt-0.5 sm:mt-1 cursor-pointer transition-all hover:brightness-[0.6]"
                   onClick={() => setOpen("omt")}
                   role="button"
                   tabIndex={0}
